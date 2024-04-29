@@ -1,20 +1,19 @@
-console.log('typescript tutorial');
+let greeting: string = "Hello, Typescript"
 
-let awesomeName: string = "ShakeAndBake";
-awesomeName = "Some thing else";
+greeting = greeting.toLocaleUpperCase();
+console.log(greeting);
 
-awesomeName = awesomeName.toUpperCase();
+let age: number = 25;
 
-awesomeName = "123";
+age += 25;
 
-console.log(awesomeName);
+let isAdult = age >= 18;
 
-let amount: number = 20;
-amount = 12 + 1;
-// amount = "Pants";
-console.log(amount);
+isAdult = !isAdult;
 
-let isAwesome: boolean = true;
+console.log(isAdult);
 
-isAwesome = false;
-isAwesome = "ShakeAndBake";
+// greeting = 10;
+
+// age = "Some String";
+
