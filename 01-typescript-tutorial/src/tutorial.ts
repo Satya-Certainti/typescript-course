@@ -1,19 +1,12 @@
-let greeting: string = "Hello, Typescript"
+const books = [ '1984', 'Brave New World', 'Farenheit 451' ];
 
-greeting = greeting.toLocaleUpperCase();
-console.log(greeting);
+let foundBook;
 
-let age: number = 25;
+for (let book of books) {
+    if (book === '1984') {
+        foundBook = book;
+        break;
+    }
+}
 
-age += 25;
-
-let isAdult = age >= 18;
-
-isAdult = !isAdult;
-
-console.log(isAdult);
-
-// greeting = 10;
-
-// age = "Some String";
-
+console.log(foundBook);
